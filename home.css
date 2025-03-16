@@ -1,0 +1,107 @@
+
+@font-face {
+  font-family: 'Yak';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205-2@1.0/Yak.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquareNeoLight';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Cafe24Lovingu';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Lovingu.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'NanumSquareNeoLight';
+  font-size: 15pt;
+}
+.navbar-brand i{ 
+  font-family: 'Cafe24Lovingu';
+}
+.navbar{
+  font-size: 12pt;
+}
+.fs-footer{
+  font-size: 12pt;
+}
+
+  
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 기본 1열 */
+  grid-gap: 15px;
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* 화면 너비가 768px 이상일 때 2열 */
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 화면 너비가 1200px 이상일 때 3열 */
+  }
+}
+@media (min-width: 1400px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* 화면 너비가 1400px 이상일 때 4열 */
+  }
+}
+
+.photo-item {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.photo-item:hover {
+  transform: scale(1.05);
+}
+.photo-item img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+/* .photo-details {
+  padding: 15px;
+}
+.photo-details h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+.photo-details p {
+  color: #666;
+  margin: 0;
+} */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+}
+#close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}

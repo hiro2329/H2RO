@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <style>
+      .carousel-item img {
+        object-fit: cover;
+        height: 30vh;
+      }
+      /* 테스크탑 (가로 해상도가 992px 보다 큰 화면에 적용)  */
+      @media (min-width: 992px) {
+        .carousel-item img {
+          height: 60vh;
+        }
+      }
+      main {
+        padding-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="mobileIndex.html">
+            <i style="color: rgb(133, 118, 118); font-size: 30pt"
+              >MaJunbeom Photo</i
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="mobileIndex.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="jeju.html">Jeju</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sapporo.html">Sapporo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="osaka.html">Osaka</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hungary.html">Hungary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="animal.html">Animal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 헤더끝 -->
+    <main>
+      <div class="container-fluid mb-3">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- data-bs-ride="carousel"자동 재생 캐러셀 -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner hero">
+            <div class="carousel-item active">
+              <img src="img/IMG_1251.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/3472370031795864613_20211122191556174.JPG"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/3472404906186001444_20231020012315267.JPG"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- 캐러셀 끝 -->
+
+      <div class="container-fluid text-start mb-3 ps-2">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <!-- 내용 ... -->
+          <div class="text-wrap text-dark fs-1 mb-2 ps-2">
+            마준범 사진개인전
+          </div>
+          <p class="fs-6 ps-2 mb-3">이것저것 맘대로 찍은것들</p>
+          <h3 class="ps-2 mb-3">전시 소개</h3>
+          <p class="fs-6 ps-2 mb-3">
+            이번 전시는 자연의 경이로움을 포착한 작품들로 구성되었습니다. 각
+            사진마다 숨겨진 이야기와 감성을 느껴보세요.
+          </p>
+          <!-- 전시 일정 및 정보 -->
+          <h3 class="ps-2 mb-3">전시 일정</h3>
+          <p class="fs-6 ps-2 mb-3">
+            📅 2025년 3월 11일 - 3월 12일 (온라인 전시)
+          </p>
+          <!-- <p class="fs-6">
+            📍 특별한 이벤트와 함께하는 라이브 토크 세션도 준비되어 있습니다!
+          </p> -->
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center fs-footer">
+          <span class="pt-2 mb-3 mb-md-0 text-muted align-items-center"
+            >&copy; 2025 MJB Photo</span
+          >
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="1.5rem"
+              width="1.5rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="none"
+                stroke-miterlimit="10"
+                stroke-width="32"
+                d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0 0 83 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0 0 13.8-25.8C465 391.17 468 391.17 451 374z"
+              ></path>
+            </svg>
+          </li>
+          <li class="ms-3">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="1.5rem"
+              width="1.5rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Instagram">
+                <g>
+                  <path
+                    d="M18.437,20.937H5.563a2.5,2.5,0,0,1-2.5-2.5V5.563a2.5,2.5,0,0,1,2.5-2.5H18.437a2.5,2.5,0,0,1,2.5,2.5V18.437A2.5,2.5,0,0,1,18.437,20.937ZM5.563,4.063a1.5,1.5,0,0,0-1.5,1.5V18.437a1.5,1.5,0,0,0,1.5,1.5H18.437a1.5,1.5,0,0,0,1.5-1.5V5.563a1.5,1.5,0,0,0-1.5-1.5Z"
+                  ></path>
+                  <path
+                    d="M12,16.594A4.595,4.595,0,1,1,16.6,12,4.6,4.6,0,0,1,12,16.594ZM12,8.4A3.595,3.595,0,1,0,15.6,12,3.6,3.6,0,0,0,12,8.4Z"
+                  ></path>
+                  <circle cx="17.2" cy="6.83" r="1.075"></circle>
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="ms-3">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="1.5rem"
+              width="1.5rem"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+              ></path>
+            </svg>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- 스크립트 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS 스크립트 시작 -->
+    <script>
+      AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+    </script>
+  </body>
+</html>
